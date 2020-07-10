@@ -1,0 +1,68 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing:border-box;
+    font-family: lato;
+}
+.wrapper{
+    background-color: #dfe6e9;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+}
+.calender{
+    width: 600px;
+    background-color: #fff;
+    margin: auto;
+    box-shadow: 0px 0px 15px 3px rgba(0, 0, 0, 0.2);
+}
+.month{
+    width: 100%;
+    background-color: #2ecc71;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+   text-align: center;
+   padding: 40px 30px;
+}
+.month h2,p
+{
+    text-transform: uppercase;
+}
+.weeks{
+    background-color: #27ae60;
+    color: #fff;
+    display: flex;
+    padding: 7px 0px;
+}
+.weeks div{
+    width: 14.285%;
+    text-transform: uppercase;
+    text-align: center;
+}
+.dayes{
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+    padding: 10px 0px;
+     
+} 
+.dayes div{
+    width: 14.285%;
+    margin-bottom: 10px;
+    padding: 10px 0px;
+    transition: all 0.4s;  
+}
+.dayes div:hover{
+    background-color: #dfe6e9;
+    cursor: pointer;
+}
+.activedayes{
+    background-color: #2ecc71;
+}
+.prev-dayes{
+    color: #c7cfd3;
+}
+#month{
+    font-size: 30px;
+}
