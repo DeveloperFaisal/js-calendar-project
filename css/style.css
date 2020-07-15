@@ -27,7 +27,7 @@
 }
 .month h2,p
 {
-    text-transform: uppercase;
+    text-transform: capitalize
 }
 .weeks{
     background-color: #27ae60;
