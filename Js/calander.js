@@ -28,7 +28,7 @@ Months = [
     "September",
     "October",
     "November",
-    "December" ]
+    "December" ];
     
 document.getElementById("date-str").innerHTML = dt.toDateString();
 document.getElementById("month").innerHTML = Months[dt.getMonth()];
@@ -38,7 +38,7 @@ let cells = '';
 for (let i = day; i > 0; i--) {
     cells+= "<div class='prev-dayes'>" + (prevDate -i +1) + "</div>";
     
-}
+};
 for (let index = 1; index <= endDate; index++) {
     if (index == toDay.getDate() && dt.getMonth() == toDay.getMonth()) {
         cells+= "<div class='activedayes'>" + index + "</div>"; 
@@ -46,7 +46,7 @@ for (let index = 1; index <= endDate; index++) {
         cells+= "<div>" + index + "</div>";
     }
     
-}
+};
 document.getElementsByClassName("dayes")[0].innerHTML = cells;
 
 }
